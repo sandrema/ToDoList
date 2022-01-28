@@ -1,3 +1,47 @@
-p{
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#E0FFFF, #E6E6FA);
+    height: 100%;
+    margin: 0 20%;
+}
+
+.par {
     color: red;
+}
+button {
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+
+.modal {
+    display: none;
+    /* тут добавить дисплей флекс по клику на новую задачу */
+    /* display: flex; */
+    position: fixed;
+    left: 800px;
+    top: 250px;
+    padding: 20px 0;
+    background-color: silver;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    flex-direction: column;
+}
+
+.modal>input {
+    margin: 10px;
+}
+
+.modal>button {
+    margin: 10px;
+}
+
+.exitModal {
+    align-self: flex-end;
 }
